@@ -15,6 +15,9 @@ public class Perfil extends javax.swing.JFrame {
      */
     public Perfil() {
         initComponents();
+        Social.SocialClass social = LogIn.uber.buscar(LogIn.usuario.getUsername());
+        
+        Perfil.setText(social.myProfile());
     }
 
     /**
@@ -54,6 +57,7 @@ public class Perfil extends javax.swing.JFrame {
 
         jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 57, 477, 328));
 
+        jButton1.setBackground(new java.awt.Color(0, 0, 51));
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("REGRESAR");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
