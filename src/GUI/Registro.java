@@ -201,6 +201,9 @@ public class Registro extends javax.swing.JFrame {
             LogIn.uber.agregarCuenta(txtUsuarioCrear.getText(), Cuentas.getSelectedItem().toString());
             txtUsuarioCrear.setText("Ingrese su Usuario");
             txtUsuarioCrear.setForeground(new java.awt.Color(102, 102, 102));
+            LogIn mn = new LogIn();
+            mn.setVisible(true);
+            this.dispose();
         }catch(Exception e){
             JOptionPane.showMessageDialog(null, "ERROR: No ha elegido correctamente un dato.");
         }
