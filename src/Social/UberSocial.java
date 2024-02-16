@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
  * author aleja
  * 
  */
-public class UberSocial implements Serializable{
+public class UberSocial{
     public ArrayList<SocialClass> sociales;
 
     public UberSocial() {
