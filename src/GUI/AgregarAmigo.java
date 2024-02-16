@@ -110,12 +110,13 @@ public class AgregarAmigo extends javax.swing.JFrame {
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("O--");
         jButton2.setBorder(null);
+        jButton2.setMaximumSize(new java.awt.Dimension(18, 18));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(458, 62, 57, 40));
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 60, 50, 40));
 
         jSeparator2.setBackground(new java.awt.Color(0, 0, 51));
         jSeparator2.setForeground(new java.awt.Color(0, 0, 51));
