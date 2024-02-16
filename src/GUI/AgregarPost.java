@@ -14,6 +14,7 @@ public class AgregarPost extends javax.swing.JFrame {
      */
     public AgregarPost() {
         initComponents();
+        this.setResizable(false);
     }
 
     /**

@@ -54,6 +54,7 @@ public class Perfil extends javax.swing.JFrame {
 
         jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 57, 477, 328));
 
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("REGRESAR");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

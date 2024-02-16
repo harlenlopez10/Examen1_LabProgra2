@@ -21,6 +21,7 @@ public class LogIn extends javax.swing.JFrame {
     public LogIn() {
         initComponents();   
         this.setLocationRelativeTo(null);
+        this.setResizable(false);
         
     }
 
@@ -97,7 +98,7 @@ public class LogIn extends javax.swing.JFrame {
 
         Registrar1.setBackground(new java.awt.Color(0, 0, 204));
         Registrar1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        Registrar1.setForeground(new java.awt.Color(204, 204, 204));
+        Registrar1.setForeground(new java.awt.Color(255, 255, 255));
         Registrar1.setText("Registrarse");
         Registrar1.setBorder(null);
         Registrar1.setBorderPainted(false);
@@ -113,7 +114,7 @@ public class LogIn extends javax.swing.JFrame {
 
         Iniciar1.setBackground(new java.awt.Color(0, 0, 204));
         Iniciar1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        Iniciar1.setForeground(new java.awt.Color(204, 204, 204));
+        Iniciar1.setForeground(new java.awt.Color(255, 255, 255));
         Iniciar1.setText("Iniciar Sesion");
         Iniciar1.setBorder(null);
         Iniciar1.setBorderPainted(false);

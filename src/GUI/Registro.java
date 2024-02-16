@@ -17,6 +17,7 @@ public class Registro extends javax.swing.JFrame {
      */
     public Registro() {
         initComponents();
+        this.setResizable(false);
         this.setLocationRelativeTo(null);
     }
 
@@ -46,7 +47,7 @@ public class Registro extends javax.swing.JFrame {
 
         Regresar.setBackground(new java.awt.Color(0, 0, 204));
         Regresar.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        Regresar.setForeground(new java.awt.Color(204, 204, 204));
+        Regresar.setForeground(new java.awt.Color(255, 255, 255));
         Regresar.setText("Regresar");
         Regresar.setBorder(null);
         Regresar.setBorderPainted(false);
@@ -61,7 +62,7 @@ public class Registro extends javax.swing.JFrame {
 
         Crear.setBackground(new java.awt.Color(0, 0, 204));
         Crear.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        Crear.setForeground(new java.awt.Color(204, 204, 204));
+        Crear.setForeground(new java.awt.Color(255, 255, 255));
         Crear.setText("Crear");
         Crear.setBorder(null);
         Crear.setBorderPainted(false);
@@ -102,10 +103,15 @@ public class Registro extends javax.swing.JFrame {
         Cuentas.setForeground(new java.awt.Color(0, 0, 0));
         Cuentas.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Facebook", "Twitter" }));
         Cuentas.setBorder(null);
+        Cuentas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CuentasActionPerformed(evt);
+            }
+        });
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(0, 0, 102));
-        jLabel10.setText("Cuenta");
+        jLabel10.setText("Tipo de Cuenta:");
 
         javax.swing.GroupLayout RegistrarseLayout = new javax.swing.GroupLayout(Registrarse);
         Registrarse.setLayout(RegistrarseLayout);
@@ -207,6 +213,10 @@ public class Registro extends javax.swing.JFrame {
         }
         txtUsuarioCrear.setForeground(java.awt.Color.BLACK);
     }//GEN-LAST:event_txtUsuarioCrearMousePressed
+
+    private void CuentasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CuentasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CuentasActionPerformed
 
     /**
      * @param args the command line arguments
