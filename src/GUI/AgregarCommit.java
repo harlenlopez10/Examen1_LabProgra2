@@ -1,20 +1,25 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
- */
 package GUI;
+
 
 import javax.swing.JOptionPane;
 
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+ */
+
 /**
  *
- *
+ * @author harle
  */
-public class AgregarCommit extends javax.swing.JPanel {
+public class AgregarCommit extends javax.swing.JFrame {
+
+    /**
+     * Creates new form AgregarCommit
+     */
     private Social.SocialClass amigo;
     public AgregarCommit() {
         initComponents();
-        
     }
 
     /**
@@ -26,13 +31,14 @@ public class AgregarCommit extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
         jSeparator1 = new javax.swing.JSeparator();
         jButton1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         txtUsuario = new javax.swing.JTextField();
         jButton2 = new javax.swing.JButton();
         jSeparator2 = new javax.swing.JSeparator();
-        jPanel1 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
         Posts = new javax.swing.JTextArea();
         Perfil = new javax.swing.JTextArea();
         jComboBox1 = new javax.swing.JComboBox<>();
@@ -42,14 +48,16 @@ public class AgregarCommit extends javax.swing.JPanel {
         jLabel4 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(255, 255, 255));
-        setMinimumSize(new java.awt.Dimension(540, 430));
-        setPreferredSize(new java.awt.Dimension(540, 430));
-        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setMinimumSize(new java.awt.Dimension(540, 430));
+        jPanel1.setPreferredSize(new java.awt.Dimension(540, 430));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jSeparator1.setBackground(new java.awt.Color(0, 0, 51));
         jSeparator1.setForeground(new java.awt.Color(0, 0, 51));
-        add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 339, 282, 10));
+        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 339, 282, 10));
 
         jButton1.setBackground(new java.awt.Color(0, 0, 51));
         jButton1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
@@ -65,12 +73,12 @@ public class AgregarCommit extends javax.swing.JPanel {
                 jButton1ActionPerformed(evt);
             }
         });
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 360, 175, 37));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 370, 175, 37));
 
         jLabel1.setFont(new java.awt.Font("Sitka Heading", 0, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(51, 51, 51));
         jLabel1.setText("Buscar: ");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 29, -1, -1));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 29, -1, -1));
 
         txtUsuario.setBackground(new java.awt.Color(255, 255, 255));
         txtUsuario.setFont(new java.awt.Font("Sitka Display", 0, 24)); // NOI18N
@@ -81,7 +89,7 @@ public class AgregarCommit extends javax.swing.JPanel {
                 txtUsuarioMousePressed(evt);
             }
         });
-        add(txtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(127, 25, 317, 40));
+        jPanel1.add(txtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(127, 25, 317, 40));
 
         jButton2.setBackground(new java.awt.Color(0, 0, 51));
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
@@ -92,13 +100,13 @@ public class AgregarCommit extends javax.swing.JPanel {
                 jButton2ActionPerformed(evt);
             }
         });
-        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 29, 57, 40));
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 29, 57, 40));
 
         jSeparator2.setBackground(new java.awt.Color(0, 0, 51));
         jSeparator2.setForeground(new java.awt.Color(0, 0, 51));
-        add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(127, 75, 299, 10));
+        jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(127, 75, 299, 10));
 
-        jPanel1.setBackground(new java.awt.Color(0, 0, 51));
+        jPanel2.setBackground(new java.awt.Color(0, 0, 51));
 
         Posts.setEditable(false);
         Posts.setBackground(new java.awt.Color(204, 255, 255));
@@ -114,19 +122,19 @@ public class AgregarCommit extends javax.swing.JPanel {
         Perfil.setForeground(new java.awt.Color(0, 0, 0));
         Perfil.setRows(5);
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(Perfil, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(Posts, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addGap(37, 37, 37)
                 .addComponent(Perfil, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -134,7 +142,7 @@ public class AgregarCommit extends javax.swing.JPanel {
                 .addContainerGap())
         );
 
-        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 91, -1, -1));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 91, -1, -1));
 
         jComboBox1.setBackground(new java.awt.Color(204, 255, 255));
         jComboBox1.setForeground(new java.awt.Color(0, 0, 0));
@@ -149,12 +157,12 @@ public class AgregarCommit extends javax.swing.JPanel {
                 jComboBox1ActionPerformed(evt);
             }
         });
-        add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(417, 120, 115, -1));
+        jPanel1.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(417, 120, 115, -1));
 
         jLabel3.setFont(new java.awt.Font("Sitka Heading", 0, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(51, 51, 51));
         jLabel3.setText("Buscar Post: ");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(306, 116, -1, -1));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(306, 116, -1, -1));
 
         jScrollPane1.setAutoscrolls(true);
         jScrollPane1.setFocusable(false);
@@ -169,14 +177,14 @@ public class AgregarCommit extends javax.swing.JPanel {
         txtPost.setOpaque(false);
         jScrollPane1.setViewportView(txtPost);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(297, 191, 253, -1));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(297, 191, 253, -1));
 
         jLabel4.setFont(new java.awt.Font("Matura MT Script Capitals", 0, 24)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(51, 51, 51));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("Post");
         jLabel4.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(371, 152, -1, -1));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(371, 152, -1, -1));
 
         jButton3.setBackground(new java.awt.Color(0, 0, 51));
         jButton3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
@@ -192,17 +200,41 @@ public class AgregarCommit extends javax.swing.JPanel {
                 jButton3ActionPerformed(evt);
             }
         });
-        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 360, 175, 37));
+        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 370, 175, 37));
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 540, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 430, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+
+        pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         try{
-            LogIn.uber.agregarComment(amigo.getUsername(), 
+            LogIn.uber.agregarComment(amigo.getUsername(),
                 jComboBox1.getSelectedIndex(), LogIn.usuario.getUsername(), txtPost.getText());
         }catch(Exception e){
             JOptionPane.showMessageDialog(null,"ERROR: Algo salio mal al comentar.\n"
-                    + "Asegurese de comentar correctamente.");
+                + "Asegurese de comentar correctamente.");
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -224,22 +256,24 @@ public class AgregarCommit extends javax.swing.JPanel {
         }
     }//GEN-LAST:event_jButton2ActionPerformed
 
+    private void jComboBox1ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_jComboBox1ItemStateChanged
+        // TODO add your handling code here:
+        Posts.setText(amigo.getPosts().get(jComboBox1.getSelectedIndex()));
+    }//GEN-LAST:event_jComboBox1ItemStateChanged
+
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox1ActionPerformed
 
-    private void jComboBox1ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_jComboBox1ItemStateChanged
-        // TODO add your handling code here:
-                Posts.setText(amigo.getPosts().get(jComboBox1.getSelectedIndex()));
-    }//GEN-LAST:event_jComboBox1ItemStateChanged
-
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        AgregarCommit dd = new AgregarCommit();
-        dd.setVisible(false);
+        Menu mn = new Menu();
+        mn.setVisible(true);
+        this.dispose();
+        
     }//GEN-LAST:event_jButton3ActionPerformed
-    
-    public void TextPerfil(Social.SocialClass usuario){
+
+   public void TextPerfil(Social.SocialClass usuario){
         String tipo = "";
         if(usuario instanceof Social.Twitter){
             tipo = "Twitter";
@@ -271,6 +305,7 @@ public class AgregarCommit extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;

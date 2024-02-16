@@ -267,7 +267,10 @@ public class Menu extends javax.swing.JFrame {
     private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
         // TODO add your handling code here:
         
-        agregarPanel(new AgregarCommit());
+        AgregarCommit mn = new AgregarCommit();
+        mn.setVisible(true);
+        this.dispose();
+        
     }//GEN-LAST:event_jLabel8MouseClicked
 
     private void jLabel8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseEntered
