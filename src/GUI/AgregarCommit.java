@@ -166,7 +166,6 @@ public class AgregarCommit extends javax.swing.JFrame {
 
         jScrollPane1.setAutoscrolls(true);
         jScrollPane1.setFocusable(false);
-        jScrollPane1.setOpaque(true);
 
         txtPost.setBackground(new java.awt.Color(204, 204, 255));
         txtPost.setColumns(20);

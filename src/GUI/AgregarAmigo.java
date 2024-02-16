@@ -17,6 +17,7 @@ public class AgregarAmigo extends javax.swing.JFrame {
      */
     public AgregarAmigo() {
         initComponents();
+        this.setResizable(false);
     }
 
     /**
@@ -87,7 +88,7 @@ public class AgregarAmigo extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 340, 132, 37));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 340, 132, 37));
 
         jLabel1.setFont(new java.awt.Font("Sitka Heading", 0, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(51, 51, 51));
@@ -120,6 +121,7 @@ public class AgregarAmigo extends javax.swing.JFrame {
         jSeparator2.setForeground(new java.awt.Color(0, 0, 51));
         jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(135, 108, 299, 10));
 
+        jButton3.setBackground(new java.awt.Color(0, 0, 51));
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("REGRESAR");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -127,7 +129,7 @@ public class AgregarAmigo extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 330, 120, 40));
+        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 390, 120, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
