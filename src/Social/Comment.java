@@ -28,7 +28,7 @@ public final class Comment {
     public String print(){
         return "   " + autor + "- " + new SimpleDateFormat("dd/MM/yy").format(fecha.getTime()) + "\n  " + contenido;
     }
-
+    
     public int getPostId() {
         return postId;
     }

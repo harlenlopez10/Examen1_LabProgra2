@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
  *
  * 
  */
-public abstract class SocialClass implements Serializable{
+public abstract class SocialClass{
     protected ArrayList<String> friends;
     protected ArrayList<String> posts;
     protected String Username;
