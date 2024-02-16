@@ -7,6 +7,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
+ * author aleja
  * 
  */
 public class UberSocial implements Serializable{

@@ -8,6 +8,7 @@ import java.util.ArrayList;
 
 /**
  *
+ *  author aleja
  *
  */
 public class Facebook extends SocialClass implements Commentable{

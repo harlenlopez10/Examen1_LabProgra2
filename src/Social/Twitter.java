@@ -2,7 +2,8 @@ package Social;
 
 /**
  *
- 
+ * author aleja
+ * 
  */
 public class Twitter extends SocialClass{
 
